@@ -1,0 +1,206 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.visually-hidden {
+    /* Вот тут описано про visually-hidden: https://htmlacademy.ru/blog/html/short-12 */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-header {
+    margin: 0 auto;
+    max-width: 900px;
+
+    /*     border-color: red;
+    border-style: dashed;  */
+}
+
+.img-logo {
+    display: block;
+    margin: 60px auto 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 30 auto 0 auto;
+    padding: 0;
+
+    list-style-type: none;
+
+    /*     border-color: green;
+    border-style: dashed; */
+}
+
+.nav-list-item {
+    margin: 5px 5px 0 5px;
+
+    /*     border-color: brown;
+    border-style: dotted; */
+}
+
+.nav-list-item a {
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: black;
+}
+
+.section-news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*     border-color: aqua;
+    border-style: groove; */
+}
+
+.img-mainnews {
+    width: 100%;
+    height: auto;
+    /* еще больше контроля с max-width */
+    /* max-width: 720px; */
+}
+
+.section-news h2 {
+    position: absolute;
+    top: 220px;
+    width: 100%;
+    text-align: center;
+}
+
+.section-news a {
+    font-size: calc((100vw - 30rem)/25 + 2rem);
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+}
+
+/* Как отступить этот текст от краев ??? */
+.section-news p {
+    /* display: block; */
+    position: absolute;
+    top: calc(220px + 13vw);
+    width: 100%;
+    height: auto;
+
+    /*     padding: 0 50px 0 50px;
+    margin: 0 50px 0 50px; */
+
+    text-align: center;
+
+    font-size: 2vw;
+    font-weight: 300;
+    color: white;
+}
+
+.section-reviews {
+    margin: 0 auto;
+}
+
+.section-reviews h2 {
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.reviews-list {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.reviews-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 10px 5px 0 5px;
+}
+
+.reviews-item img {
+    width: 100%;
+}
+
+.reviews-item h3 {
+    margin: 5px 0 0 0;
+}
+
+.reviews-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    width: 700px;
+}
+
+.rewiews-article p {
+    margin: 5px 0 0 0;
+    text-align: left;
+    color: black;
+    font-size: 11px;
+}
+
+.section-promo {
+    margin: 60px auto 0 auto;
+    width: 100%;
+    height: 33vw;
+    min-height: 230px;
+    max-height: 550px;
+    background-color: gray;
+}
+
+.circle {
+    margin: -80px auto 0 auto;
+
+    width: 42vw;
+    min-width: 300px;
+    max-width: 550px;
+    height: 42vw;
+    min-height: 300px;
+    max-height: 550px;
+
+    background: white;
+    border-radius: 50%;
+    /*  border: solid; */
+    text-align: center;
+    font-size: calc(11px + (15 - 5) * ((100vw - 600px) / (2220 - 1200)));
+
+}
+
+.section-promo h2 {
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.circle-wrapper {
+    padding: 12vh 5vw 5vw 5vw;
+    /*  padding-top: calc(12vh - 1vw); */
+}
+
+.main-footer {
+    margin: 80px auto;
+    background-color: gray;
+}
